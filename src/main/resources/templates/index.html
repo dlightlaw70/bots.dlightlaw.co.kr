@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <title>디라이트 계약서 서비스</title>
+	    <link rel='icon' href='http://dlightlaw.co.kr/WebIcon.png'/>
+	
+		<link rel="stylesheet" type="text/css" th:href="@{/static/css/Web.css?qwe}" />
+			<link rel="stylesheet" type="text/css" th:href="@{/static/css/Bot.css?qwe}" />
+		<style>
+			.descript{
+				background-color : gray;
+			}
+		</style>
+		<script src="https://unpkg.com/vue"></script>
+		<script
+		  src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous">
+		</script>
+		<script>
+		$(document)
+		.ready(function() {
+			$.ajax({
+		        url : "http://localhost:8080/test",
+		        type: "get",
+		        data: {filename : 'test'},
+		        success : function(responseData){
+		        	if(responseData){
+		        		document.getElementById("desc").innerHTML = responseData;
+		        	}
+	        	}
+  			  });
+		});
+		</script>
+	</head>
+	<body>
+		<div>
+			<div>
+			    <h1>Login Success!! 안녕하십니까? </h1>
+			    <p id="desc" class="descript"></p>
+			</div>
+		</div>
+	</body> 
+</html>

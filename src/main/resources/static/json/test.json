@@ -1,0 +1,134 @@
+{
+  "title": "고용계약",
+  "0": {
+    "type":"descript",
+    "descript": "이것은 계약서에 대한 설명입니다."
+  },
+  "1": {
+     "type" : "request_group_title",
+     "title" : "사업주 기본정보 입력"
+  },
+  "2": {
+    "type" : "request",
+    "request" : "사업체명을 입력해주세요.",
+    "request_type" : "name",
+    "id" : "business_name"
+    
+  },
+  "3": {
+    "type": "request",
+    "request": "사업체 주소를 입력하세요.",
+    "request_type": "address",
+    "id" : "business_address"
+  },
+  "4": {
+    "type" : "request",
+    "request" : "사업체 전화번호를 입력하세요.",
+    "request_type" : "phone_number",
+    "id" : "business_phone_number"
+  },
+  "5": {
+    "type" : "request",
+    "request" : "대표자명을 입력하세요.",
+    "request_type" : "name",
+    "id" : "ceo_name"
+  },
+  "6":{
+    "type":"request_group_title",
+    "title" : "근로자 기본정보 입력"
+  },
+  "7": {
+    "type" : "request",
+    "request" : "근로자 주소를 입력하세요.",
+    "request_type" : "phone_number",
+    "id" : "employee_address"
+  },
+  "8": {
+    "type" : "request",
+    "request" : "근로자 연락처를 입력하세요.",
+    "request_type" : "phone_number",
+    "id" : "employee_phone_number"
+  },
+  "9" : {
+    "type" : "request",
+    "request" : "근로자 성명을 입력하세요.",
+    "request_type" : "name",
+    "id" : "employee_name"
+  },
+  "10" : {
+    "type" : "contract_part_proposal",
+    "part_type" : "introduction",
+    "content" : ""
+  },
+  "11" :{
+    "type" : "article_descript",
+    "article_title" : "계약기간",
+    "article_descript" : "단기근로자 및"
+  },
+  "12" : {
+    "type" : "reqeust",
+    "request" : "근로유형을 선택해 주세요",
+    "request_type" : "radio",
+    "request_options" : "단기근로자\t타임근로자\t정규직",
+    "request_guide" : {
+      "0" : "0",
+      "1" : "0",
+      "2" : "1"
+    }
+
+  },
+  "13" : {
+    "0" : {
+      "0" : {
+        "type" : "request",
+        "request" : "근로 개시일을 입력하세요."
+      },
+      "1" : {
+        
+      },
+      "2" : {
+        
+      }
+    },
+    "1" : {
+      "0" : {
+        
+      },
+      "1" : {
+        
+      }
+    }
+  }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
